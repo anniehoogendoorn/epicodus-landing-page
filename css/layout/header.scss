@@ -6,13 +6,18 @@ header {
 }
 
 nav {
-
+  @include clearfix;
 }
 
 .logo {
-  width: 185px;
+  width: 265px;
+  display: inline-block;
+  padding: 20px;
 }
 
 .menu {
   float: right;
+  li {
+    display: inline ;
+  }
 }

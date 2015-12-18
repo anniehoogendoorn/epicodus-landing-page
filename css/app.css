@@ -544,10 +544,19 @@ header {
   background-size: cover;
   height: 700px; }
 
+nav::after {
+  clear: both;
+  content: "";
+  display: table; }
+
 .logo {
-  width: 185px; }
+  width: 265px;
+  display: inline-block;
+  padding: 20px; }
 
 .menu {
   float: right; }
+  .menu li {
+    display: inline; }
 
 /*# sourceMappingURL=app.css.map */
