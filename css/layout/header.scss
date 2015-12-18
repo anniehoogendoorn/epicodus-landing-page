@@ -1,0 +1,18 @@
+header {
+  color: $color-text-light;
+  background: url('#{$path-img}/header-bg.jpg') no-repeat center;
+  background-size: cover;
+  height: 700px;
+}
+
+nav {
+
+}
+
+.logo {
+  width: 185px;
+}
+
+.menu {
+  float: right;
+}
