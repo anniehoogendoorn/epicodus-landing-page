@@ -1,0 +1,62 @@
+.hero {
+  $base-border-radius: 3px !default;
+  $action-color: #477DCA !default;
+  $large-screen: em(860) !default;
+  $hero-background-top: black;
+  $hero-background-bottom: black;
+  $hero-color: white;
+  $gradient-angle: 10deg;
+  $hero-image: '#{$path-img}/hero-bg.jpg';
+
+  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, .6)), to(rgba(0, 0, 0, 0.1))), url($hero-image) no-repeat center center;
+  background-color: #324766;
+  // background: rgba($hero-background-bottom, 0.5), url($hero-image);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3em;
+
+  .hero-logo img {
+    height: 4em;
+    margin-bottom: 1em;
+  }
+
+  .hero-inner {
+    @include outer-container;
+    @include clearfix;
+    margin: auto;
+    padding: 3.5em;
+    text-align: center;
+    height: 785px;
+
+    .hero-copy {
+      @include span-columns(10);
+      @include shift(1);
+      text-align: center;
+      margin-top: 200px;
+
+      h1 {
+        color: $hero-color;
+        font-size: em(30);
+        margin-bottom: 0.5em;
+        text-transform: uppercase;
+
+        @include media($large-screen) {
+          font-size: em(68);
+        }
+      }
+
+      p {
+        color: $hero-color;
+        line-height: 1.4em;
+        margin: 0 auto 3em auto;
+
+        @include media($large-screen) {
+          font-size: 1.1em;
+          max-width: 40%;
+        }
+      }
+    }
+  }
+}

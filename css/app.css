@@ -539,12 +539,6 @@ td,
 th {
   padding: 0; }
 
-.hero {
-  color: #fff;
-  background: url("../img/header-bg.jpg") no-repeat center;
-  background-size: cover;
-  height: 700px; }
-
 header.navigation {
   background-color: #fff;
   min-height: 90px;
@@ -771,5 +765,60 @@ header.navigation {
           -moz-box-sizing: border-box;
           box-sizing: border-box;
           display: block; } }
+
+.hero {
+  background: url("../img/hero-bg.jpg"), -webkit-linear-gradient(-280deg, black, black), no-repeat black scroll;
+  background: url("../img/hero-bg.jpg"), linear-gradient(10deg, black, black), no-repeat black scroll;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.1))), url("../img/hero-bg.jpg") no-repeat center center;
+  background-color: #324766;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3em; }
+  .hero .hero-logo img {
+    height: 4em;
+    margin-bottom: 1em; }
+  .hero .hero-inner {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    padding: 3.5em;
+    text-align: center;
+    height: 785px; }
+    .hero .hero-inner::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .hero .hero-inner::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .hero .hero-inner .hero-copy {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%;
+      text-align: center;
+      margin-top: 200px; }
+      .hero .hero-inner .hero-copy:last-child {
+        margin-right: 0; }
+      .hero .hero-inner .hero-copy h1 {
+        color: white;
+        font-size: 1.875em;
+        margin-bottom: 0.5em;
+        text-transform: uppercase; }
+        @media screen and (min-width: 53.75em) {
+          .hero .hero-inner .hero-copy h1 {
+            font-size: 4.25em; } }
+      .hero .hero-inner .hero-copy p {
+        color: white;
+        line-height: 1.4em;
+        margin: 0 auto 3em auto; }
+        @media screen and (min-width: 53.75em) {
+          .hero .hero-inner .hero-copy p {
+            font-size: 1.1em;
+            max-width: 40%; } }
 
 /*# sourceMappingURL=app.css.map */
