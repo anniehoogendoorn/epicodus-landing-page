@@ -539,6 +539,17 @@ td,
 th {
   padding: 0; }
 
+.cards button {
+  background: #2eccc6;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1.25em;
+  padding: 25px 46px;
+  display: inline;
+  text-align: center; }
+
 header.navigation {
   background-color: #fff;
   min-height: 90px;
@@ -820,6 +831,9 @@ header.navigation {
           .hero .hero-inner .hero-copy p {
             font-size: 1.1em;
             max-width: 40%; } }
+      .hero .hero-inner .hero-copy button {
+        background: #2eccc6;
+        color: white; }
 
 .cards {
   display: -webkit-box;
@@ -865,6 +879,8 @@ header.navigation {
     flex-grow: 1;
     -ms-flex-positive: 1;
     margin: 0 1em; }
+  .cards p {
+    font-size: 18px; }
   .cards.testimonials h2 {
     text-transform: uppercase;
     font-size: 1.375em; }
@@ -879,5 +895,9 @@ header.navigation {
     overflow: hidden; }
     .cards .card-image img {
       width: 100%; }
+  .cards button {
+    margin-top: 25px; }
+  .cards .card-button {
+    text-align: center; }
 
 /*# sourceMappingURL=app.css.map */

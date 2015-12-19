@@ -1,5 +1,5 @@
 .cards {
-  $blue: #3a53a4;
+
 
   @include display(flex);
   @include flex-wrap(wrap);
@@ -15,7 +15,8 @@
     margin: 0 1em;
   }
 
-  h2 {
+  p {
+    font-size: 18px;
   }
 
 
@@ -48,5 +49,14 @@
     img {
       width: 100%;
     }
+  }
+
+  button {
+    @extend %button;
+    margin-top: 25px;
+  }
+
+  .card-button {
+    text-align: center;
   }
 }

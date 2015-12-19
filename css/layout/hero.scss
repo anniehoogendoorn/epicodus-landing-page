@@ -6,6 +6,7 @@
   $hero-background-bottom: black;
   $hero-color: white;
   $gradient-angle: 10deg;
+  $button-color: #2eccc6;
   $hero-image: '#{$path-img}/hero-bg.jpg';
 
   @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
@@ -56,6 +57,11 @@
           font-size: 1.1em;
           max-width: 40%;
         }
+      }
+
+      button {
+        background: $button-color;
+        color: $hero-color;
       }
     }
   }
