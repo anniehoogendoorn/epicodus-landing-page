@@ -7,30 +7,97 @@
     <link rel="stylesheet" href="css/app.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-
-      <header class="navigation" role="banner">
-        <div class="navigation-wrapper">
-          <a href="javascript:void(0)" class="logo">
-            <img src="img/logo.png" alt="Logo Image">
-          </a>
-          <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
-          <nav role="navigation">
-            <ul id="js-navigation-menu" class="navigation-menu show">
-              <li class="nav-link"><a href="javascript:void(0)">Students</a></li>
-              <li class="nav-link"><a href="javascript:void(0)">Classes</a></li>
-              <li class="nav-link"><a href="javascript:void(0)">Employers</a></li>
-              <li class="nav-link"><a href="javascript:void(0)">About</a></li>
-          </nav>
-        </div>
-      </header>
-
-      <div class="hero">
-      	<div class="hero-inner">
-      		<div class="hero-copy">
-      			<h1>A vocational school for aspiring programmers</h1>
-      		</div>
-      	</div>
+    <outer-container>
+      <!-- navigation -->
+    <header class="navigation" role="banner">
+      <div class="navigation-wrapper">
+        <a href="javascript:void(0)" class="logo">
+          <img src="img/logo.png" alt="Logo Image">
+        </a>
+        <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+        <nav role="navigation">
+          <ul id="js-navigation-menu" class="navigation-menu show">
+            <li class="nav-link"><a href="javascript:void(0)">Students</a></li>
+            <li class="nav-link"><a href="javascript:void(0)">Classes</a></li>
+            <li class="nav-link"><a href="javascript:void(0)">Employers</a></li>
+            <li class="nav-link"><a href="javascript:void(0)">About</a></li>
+        </nav>
       </div>
+    </header>
+
+    <!-- hero  -->
+    <div class="hero">
+    	<div class="hero-inner">
+    		<div class="hero-copy">
+    			<h1>A vocational school for aspiring programmers</h1>
+    		</div>
+    	</div>
+    </div>
+
+    <!-- testimonials -->
+    <div class="cards testimonials ">
+      <div class="card ">
+        <div class="card-header">
+          <h2>Learn to code</h2>
+        </div>
+        <div class="card-copy">
+          <p>"At this time last year, I was stuck in a dead end job, was questioning my career, and felt like I wasn't living up to my potential. This year, I have a job at a place that is genuinely excited to help me learn and grow. I'm really passionate about development and couldn't be more excited to keep learning in this field."</p>
+          <p>- Anna, former student</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>Gain hands-on experience</h2>
+        </div>
+        <div class="card-copy">
+          <p>"The internship I did with Epicodus was an awesome experience and invaluable in my job search. After completing Epicodus, I sent out quite a few resumes, and ultimately had the choice between two very interested companies. I've worked just over a month now at my new job and couldn't be happier."</p>
+          <p>- Diego, former student</p>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>Find a new direction</h2>
+        </div>
+        <div class="card-copy">
+          <p>"Going through this program and learning a viable skill has turned my life completely around. You helped me kindle a passion and desire for programming and I actually wake up with a smile knowing I have a job I enjoy. I feel this is something I can really excel at."</p>
+          <p>- David, former student</p>
+
+        </div>
+      </div>
+      <hr>
+    </div>
+
+    <!-- Services -->
+    <div class="cards services">
+  <div class="card">
+    <div class="card-image">
+      <img src="img/students.jpg" alt="Students working on computers">
+    </div>
+    <div class="card-header">
+      <h2>Students</h2>
+    </div>
+    <div class="card-copy">
+      <p>At Epicodus, you'll learn how to build web sites and mobile apps from top to bottom with modern technologies and practices. More importantly than any particular skill, though, you'll learn how to think like a programmer, write good code, and pick up new skills in this fast-changing industry.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-image">
+      <img src="img/employers.jpg" alt="Employers visiting Epicodus">
+    </div>
+    <div class="card-header">
+      <h2>Employers</h2>
+    </div>
+    <div class="card-copy">
+      <p>Epicodus graduates work at companies as small as 3-person startups, as big as a Fortune 100 company, and everything in between. Through internship programs, job fairs, and hands-on support from our staff, we make it easy for companies to connect with our students.</p>
+    </div>
+  </div>
+
+
+
 
 
      <!-- Javascript -->
@@ -50,6 +117,6 @@
         });
 
     </script>
-
+  </outer-container>
   </body>
 </html>

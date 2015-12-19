@@ -1,0 +1,52 @@
+.cards {
+  $blue: #3a53a4;
+
+  @include display(flex);
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+  @include outer-container;
+  margin-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid lightgrey;
+
+  .card {
+    @include flex-basis(20em);
+    @include flex-grow(1);
+    margin: 0 1em;
+  }
+
+  h2 {
+  }
+
+
+  &.testimonials {
+    h2 {
+      text-transform: uppercase;
+      font-size: em(22)
+    }
+    p {
+      font-style: italic;
+    }
+
+  }
+
+  &.services {
+    h2 {
+      font-size: em(32);
+      color: $blue;
+      text-align: center;
+      padding-top: em(20);
+    }
+  }
+
+
+
+  .card-image {
+    // max-width: 461px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+}
